@@ -1,0 +1,16 @@
+body{
+    background-color: ccc;
+    margin: 20px 80px;
+}
+.container{
+    width: 40%;
+    height: 200px;
+    margin:0 30%;
+    border: 1px black solid;
+}
+.div-img{
+    float: left;
+}
+div-text{
+    float: right;
+}

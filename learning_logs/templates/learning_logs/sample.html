@@ -1,0 +1,24 @@
+{% load static %}
+<!doctype>
+<html lang="en">
+<head>
+   <title>Sample Page</title>
+   <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}" />
+</head>
+<body>
+    {% for book in books %}
+    <div class="container">
+        <div class="div-img">
+            <img src="{% static book.img_upload.url %}" />
+        </div>
+        <div class="div-text">
+            {{ book.text }}
+        </div>
+    </div>
+   
+   
+    {% endfor %}
+</body>
+
+
+</html>
